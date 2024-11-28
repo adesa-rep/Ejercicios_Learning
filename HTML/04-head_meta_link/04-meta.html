@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- si escribimos 'link:favicon', nos generará <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">, en el atributo href indicamos la ruta donde está guardado el ícono que queremos usar. Con esta metaetiqueta podemos cambiar icono que se muestra junto con el nombre de la pagina en la pestaña definido con el etiqueta <title> que también está en el header-->
+
+    <meta charset="UTF-8" />
+    <!--indicando el  tipo de codificación (ejemplo para que salgan caracteres como la ñ en lugar de símbolos raros)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--para indicar el nombre del autor de la página-->
+    <meta name="author" content="Lorena" />
+    <!-- para mejorar el posicionamiento en las busquedas de google-->
+    <meta name="description" content="Esta es una página desordenada" />
+    <!--en el atributo 'href' indicamos la ruta donde está guardado el ícono que queremos usar-->
+    <link
+      rel="shortcut icon"
+      href="/Retos_Master/HTML/01_Reto_Conceptos_Basicos/Images/gato corbata.bmp"
+      type="image/x-icon"
+    />
+    <!--enlazamos con una hora .CSS-->
+    <link rel="stylesheet" href="./04-styles.css" />
+    <!--enlazamos con un script-->
+    <script src="./04-script.js"></script>
+    <title>Jugando con metaetiquetas</title>
+  </head>
+
+  <body>
+    <img
+      src="/Retos_Master/HTML/01_Reto_Conceptos_Basicos/Images/git profile.jpg"
+      alt="gatos salpicado"
+      width="450px"
+      title="dibujo gato"
+    />
+    <div id="personal_info_Pedro" class="personal_info">
+      <p>Pedro Perez</p>
+      <p lang="en">Developer</p>
+    </div>
+    <div id="personal_info_Marta" class="personal_info">
+      <p>Marta Castellanos</p>
+      <p>Secretaria</p>
+    </div>
+    <p class="personal_info">ghghghgh</p>
+  </body>
+</html>

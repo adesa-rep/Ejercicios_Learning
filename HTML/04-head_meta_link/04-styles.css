@@ -1,0 +1,25 @@
+/*body {
+  background-color: orange;*/
+
+/*se toma en cuenta solo la primera modificacion, en este caso si modificamos primero la clase, ese sera el cambio predominante sobre los elementos, pero si modificamos primero los id, entonces ese sera el cambio predominante */
+
+.personal_info {
+  color: fuchsia;
+  background-color: aquamarine;
+}
+
+#personal_info_Pedro {
+  display: block;
+  background-color: #1a1b26;
+  margin: 25px;
+  padding: 25px;
+  color: yellowgreen;
+}
+
+#personal_info_Marta {
+  display: block;
+  background-color: yellow;
+  margin: 0px;
+  padding: 0px;
+  color: purple;
+}

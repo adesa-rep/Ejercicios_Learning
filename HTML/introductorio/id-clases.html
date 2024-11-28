@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendiendo a usar los atributos 'id'y 'class'</title>
+  </head>
+
+  <body>
+    <!--Cada id debe ser único para cada elemento, aunque si se repite no representara ningún error en el código, se considera una mala práctica, ademas de que luego cuando queramos acceder a ese elemento en particular no será posible porque no habrá manera de distinguir entre un o otro si comparten el mismo id. Por otro lado, si tenemos varios elementos que comparten una "estructura", si necesitamos acceder a ellos, podemos asignarles la misma class-->
+    <div id="personal_info_Pedro" class="personal_info">
+      <p>Pedro Perez</p>
+      <p lang="en">Developer</p>
+      <!--! el atributo lang no solo se usa en head, también puede usarse en otros elementos para cambiar el lenguaje, pero este cambio solo afectaría ese elemento, no a todo el documento-->
+    </div>
+
+    <div id="Personal_info_Marta" class="personal_info">
+      <p>Marta Castellanos</p>
+      <p>Secretaria</p>
+    </div>
+  </body>
+</html>

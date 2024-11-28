@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de interactividad con span</title>
+    <style>
+      .cambiar-color {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Haz clic en este <span class="cambiar-color" id="miSpan">texto</span> para
+      cambiar su color.
+    </p>
+
+    <script>
+      document.getElementById('miSpan').onclick = function () {
+        this.style.color = this.style.color === 'red' ? 'blue' : 'red'
+      }
+    </script>
+  </body>
+</html>
