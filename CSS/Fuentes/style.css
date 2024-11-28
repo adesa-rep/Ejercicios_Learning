@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'roboto-descargada';
+  src: url(./Assets/Fonts/Roboto-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'barriecito';
+  src: url(./Assets/Fonts/Barriecito/Barriecito-Regular.ttf) format('truetype');
+}
+
+/* @font-face {
+  font-family: 'pacifico';
+  src: url(./Assets/Fonts/Pacifico/Pacifico-Regular.ttf) format('truetype');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
+
+html {
+  background-color: blue;
+  /* padding: 60px; */
+}
+
+body {
+  background-color: plum;
+}
+
+section {
+  background-color: rgb(167, 131, 87);
+  text-align: center;
+}
+
+article {
+  background-color: black;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  background-color: antiquewhite;
+  font-weight: 800;
+  border: 2px solid black;
+  margin: 10px auto;
+  padding: 10px 15px;
+  width: 45%;
+  text-align: justify;
+}
+
+.fuente-pacifico {
+  font-family: 'Pacifico';
+  font-size: 2rem;
+}
+
+.fuente-barriecito {
+  line-height: 1.5;
+  font-family: 'barriecito';
+  font-size: 1.5rem;
+}
+
+.fuente-roboto {
+  background-color: green;
+  color: white;
+  font-family: 'roboto-descargada';
+}
+
+.fuente-importada {
+  font-family: 'Jaro';
+  background-color: yellow;
+  color: black;
+}
