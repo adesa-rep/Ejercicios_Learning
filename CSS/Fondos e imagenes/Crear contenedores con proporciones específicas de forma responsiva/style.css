@@ -1,0 +1,82 @@
+/* Crear contenedores con proporciones específicas de forma responsiva, sin definir alturas fijas. */
+
+@import url(https://fonts.googleapis.com/css?family=Dosis:300);
+
+/* aplicamos reglas a todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  /* Establece que cada elemento será un contenedor base para posicionar elementos hijos: */
+  position: relative;
+}
+
+/* aplicamos estilos para toda la pagina */
+html,
+body {
+  background: #164c88;
+  font-family: Dosis;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f6fafd;
+}
+/* de forma explicita aplicamos una regla exclusiva para el body */
+body {
+  padding: 1rem;
+}
+
+/* contenedor principal */
+.ejemplo {
+  /* centramos todo el contenido horizontalmente */
+  text-align: center;
+}
+
+/* definimos el estilo general del bloque */
+.width {
+  /* cada  bloque ocupa el 45% del ancho de contenedor principal */
+  width: 45%;
+  background: #f9d237;
+  /* Necesario para que el contenido y el pseudo-elemento (::before) se posicionen correctamente dentro del bloque: */
+  position: relative;
+  /*  Hace que los bloques se alineen uno al lado del otro: */
+  display: inline-block;
+  margin: 1%;
+  vertical-align: top;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.width:before {
+  /* inserta un "espacio" en blanco (Genera un elemento invisible dentro de todos los elemento con esta clase) para que el pseudo-elemento exista (es decir, que halla algo dentro) y luego poder "empujarlo" con el padding  */
+  content: '';
+  /* los pseudo-elementos son inline, asi que hacemos que se comporte como un bloque para poder ubicarlo justo encima del elemento y que abarque todo el ancho */
+  display: block;
+}
+
+/* relleno de los elementos */
+.ratio1-1:before {
+  /* Define la altura como un porcentaje del ancho */
+  padding-top: 100%;
+}
+.ratio2-1:before {
+  padding-top: 50%;
+}
+.ratio4-3:before {
+  padding-top: 75%;
+}
+.ratio16-9:before {
+  padding-top: 56.25%;
+}
+
+.contenido {
+  /* Hace que .contenido ocupe todo el espacio dentro de .width: */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: #444;
+}
+a {
+  color: #f9d237;
+}
