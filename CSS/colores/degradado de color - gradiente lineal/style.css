@@ -1,0 +1,7 @@
+div {
+  background: linear-gradient(
+    to right,
+    red,
+    yellow
+  ); /* Degradado de rojo a amarillo */
+}

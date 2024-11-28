@@ -1,0 +1,20 @@
+.header {
+  width: 100vw; /* El encabezado ocupa todo el ancho del viewport */
+  height: 30vh; /* La altura del encabezado es el 30% del alto del viewport */
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  flex-direction: column; /* Coloca el título y subtítulo en una columna (uno debajo del otro) */
+  justify-content: center; /* Centra el contenido verticalmente dentro del header */
+  align-items: center; /* Centra el contenido horizontalmente */
+  background-color: #333; /* Fondo oscuro para destacar el texto */
+  color: white; /* Texto blanco para contraste */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.header h1 {
+  font-size: 5vw; /* El título principal se escala según el viewport */
+}
+
+.header p {
+  font-size: 2vw; /* Subtítulo más pequeño y también escalable */
+  max-width: 80vw; /* Limita el ancho del texto al 80% del viewport */
+}

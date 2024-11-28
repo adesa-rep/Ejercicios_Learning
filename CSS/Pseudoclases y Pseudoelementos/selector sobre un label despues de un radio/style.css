@@ -1,0 +1,5 @@
+input:checked + label {
+  color: crimson;
+}
+
+/* Este selector aplica estilos a un elemento <label> que se encuentra inmediatamente después (+) de un <input> marcado (es decir, un checkbox o un radio button que está seleccionado). */

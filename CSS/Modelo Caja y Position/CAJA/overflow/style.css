@@ -1,0 +1,28 @@
+.overflow-visible {
+  height: 2em;
+  width: 12em;
+  border: 3px dotted orange;
+  margin-bottom: 100px;
+  overflow: visible; /* dibuja barras si es necesario */
+}
+
+.overflow-hidden {
+  width: 12em;
+  height: 2em;
+  border: 3px dotted orange;
+  overflow: hidden; /* No Scroll*/
+}
+
+.overflow-scroll {
+  width: 12em;
+  height: 2em;
+  border: 3px dotted orange;
+  overflow: scroll; /* Scroll */
+}
+
+.overflow-auto {
+  width: 12em;
+  height: 2em;
+  border: 3px dotted orange;
+  overflow: auto; /* auto */
+}

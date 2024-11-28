@@ -1,0 +1,26 @@
+.gallery {
+  display: grid; /* Esto convierte el contenedor en una cuadrícula (o grid), lo que permite distribuir las imágenes en columnas y filas automáticamente.*/
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(20vw, 1fr)
+  ); /* Columnas dinámicas */
+  gap: 2vw; /* Espaciado relativo al ancho del viewport. Asegura que el espacio entre las imágenes se mantenga proporcional a la ventana. */
+}
+
+.img {
+  aspect-ratio: 1; /* Mantiene proporción cuadrada */
+  background-size: cover;
+  background-position: center;
+}
+
+.img:nth-child(1) {
+  background-image: url('../../assets/Esp.png');
+}
+
+.img:nth-child(2) {
+  background-image: url('../../assets/wallpaperbetter.com_1920x1080.jpg');
+}
+
+.img:nth-child(3) {
+  background-image: url('../../assets/Betterimage.ai_1729189432894_\(1\).webp');
+}

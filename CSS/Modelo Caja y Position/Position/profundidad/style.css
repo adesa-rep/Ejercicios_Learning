@@ -1,0 +1,35 @@
+.amarillo {
+  z-index: 0;
+  background-color: yellow;
+  width: 400px;
+  height: 800px;
+}
+.rojo {
+  z-index: 1;
+  width: 100px;
+  height: 20px;
+  background-color: red;
+}
+.gris {
+  z-index: 2;
+  position: relative;
+  left: 35px;
+  top: 5px;
+  background-color: grey;
+}
+.verde {
+  z-index: 3;
+  position: relative;
+  bottom: 15px;
+  left: 40px;
+  width: 100px;
+  height: 20px;
+  background-color: green;
+}
+.azul {
+  /* aunqque tiene mas profundidad, no va por encima de todos porque tiene la propiedad positcion static por defecto. para que el z-index sea efectivo de tener una position diferente a static */
+  z-index: 100;
+  background-color: blue;
+  width: 300px;
+  height: 600px;
+}

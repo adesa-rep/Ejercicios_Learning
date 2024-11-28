@@ -1,0 +1,36 @@
+:root {
+  --color-principal: #3498db; /* Definición de una variable CSS */
+  --fuente-principal: 'Arial', sans-serif;
+  --tamaño-fuente: 16px;
+  --color-parrafo-especial: #ecd615;
+}
+
+html {
+  background-color: black;
+  color: var(--color-principal);
+}
+
+body {
+  font-family: var(--fuente-principal); /* Uso de la variable */
+  font-size: var(--tamaño-fuente);
+  background-color: var(--color-principal); /* Uso de la variable */
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: #ecf0f1; /* Color específico para el texto de párrafo */
+}
+
+/* para seleccionar el segundo elemento <p> dentro de su padre (en este caso, el cuerpo del documento <body>), sin importar otros tipos de elementos que puedan estar presentes. */
+body p:nth-of-type(2) {
+  text-decoration: underline;
+  color: var(--color-parrafo-especial);
+  font-weight: bold;
+  border: 2px double wheat;
+  padding: 10px; /* Crea espacio entre el contenido del párrafo y su borde.*/
+  margin-left: 10px; /* Define el espacio exterior del párrafo con respecto a otros elementos. */
+}

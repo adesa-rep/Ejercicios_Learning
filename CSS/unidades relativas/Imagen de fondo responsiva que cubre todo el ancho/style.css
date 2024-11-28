@@ -1,0 +1,14 @@
+.fondo {
+  width: 100vw; /* 100% del ancho del viewport */
+  height: 50vh; /* 50% de la altura del viewport */
+  background-image: url('./gato_color_informatico.PNG');
+  background-size: cover; /* background-size: cover; asegura que la imagen de fondo cubra todo el área del contenedor, adaptándose dinámicamente al tamaño de la ventana. */
+  background-position: center;
+}
+
+.content {
+  width: 80vw; /* 80% del ancho del viewport */
+  margin: 0 auto; /* Centrado */
+  background: green;
+  padding: 20px;
+}

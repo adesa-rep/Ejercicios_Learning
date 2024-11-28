@@ -1,0 +1,26 @@
+div {
+  width: 250px;
+  height: 75px;
+  padding: 25px;
+  border: 5px solid black;
+  background: lightblue;
+}
+
+.content-box {
+  box-sizing: content-box;
+  /* Ancho  total: 250px + (2 * 25px) + (2 * 5px) = 310px
+     Altura total: 75px + (2 * 25px) + (2 * 5px) = 135px
+     Ancho de la caja de contenido: 250px
+     Altura de la caja de contenido: 75px */
+}
+
+.border-box {
+  box-sizing: border-box;
+  /* Ancho total: 250px
+     Altura total: 75px
+     Ancho de la caja de contenido: 250px - (2 * 25px) - (2 * 5px) = 190px
+     Altura de la caja de contenido: 75px - (2 * 25px) - (2 * 5px) = 10px */
+}
+
+/* Lo que estamos haciendo aquí es, en el <div> con el box-sizing en content-box, indicar que el width del CONTENIDO será 250 y a esto se le tendrá que añadir el padding y el border.
+Por otro lado, en el <div> con el box-sizing en border-box estamos indicando que el ancho total de la CAJA será 250px, por lo que el espacio que tendrá el contenido serán esos 250px menos lo asignado al padding y border. */

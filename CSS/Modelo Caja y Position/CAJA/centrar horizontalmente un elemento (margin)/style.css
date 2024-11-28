@@ -1,0 +1,18 @@
+.margin-example {
+  width: 800px;
+  margin: auto;
+  height: 100;
+  background-color: plum;
+  color: black;
+  font-size: 2rem;
+}
+
+.centrar-texto {
+  font-size: 2rem;
+  background: grey;
+  color: white;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+}

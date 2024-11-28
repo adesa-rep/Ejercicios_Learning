@@ -1,0 +1,11 @@
+.lotr > li {
+  color: orange;
+  font-weight: bold;
+}
+
+.hob > li {
+  color: goldenrod;
+}
+/* estamos indicando con el combinador de hijo que le aplique ciertas reglas a todos los “li” descendientes de las clases .lotr y .hob.
+
+De esta manera podemos atacar a todos los elementos de dos padres distintos. */

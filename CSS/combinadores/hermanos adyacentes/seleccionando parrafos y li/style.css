@@ -1,0 +1,31 @@
+/* seleccionar un hermano inmediato de h2 (esto solo selecciona el primer <p>, porque el segundo <p> no es hermano inmediato) */
+h2 + p {
+  background-color: red;
+}
+
+/* con esto cambiamos cambiamos todos los hermanos inmediatos del primer <p>, pero sin incluirle */
+p + p {
+  background-color: yellow;
+}
+
+/* si queremos seleccionar el primer elemento de una lista, no podemos usar ul + li, porque esto solo funciona cuando se trata de hermanos inmediatos y <li> es un hijo de <ul>, asi que en estos casos hay que usar subclases. Por ejemplo: */
+
+/* para seleccionar el primer elemento de una lista */
+ul li:first-child {
+  text-decoration: underline;
+  color: purple;
+}
+/* para seleccionar el segundo elemento de una lista */
+ul li:nth-child(2) {
+  background-color: green;
+}
+/* otra opcion seria: */
+ul li:first-of-type + li {
+  background-color: blue;
+}
+
+/* para seleccionar el tercer elemento */
+ul li:nth-child(3) {
+  background-color: black;
+  color: white;
+}

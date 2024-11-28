@@ -1,0 +1,9 @@
+h2 ~ span {
+  text-decoration: underline;
+}
+
+p ~ span {
+  font-style: italic;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,11 @@
+/* .two-towers span {
+  color: crimson;
+  font-weight: bold;
+} */
+
+section span {
+  color: crimson;
+  font-weight: bold;
+}
+
+/* En este ejemplo estamos seleccionando cualquier elemento span dentro de la clase .two-towers, sin necesidad que sea directo o adyacente, pero concretando el scope dentro de la clase indicada. */

@@ -1,0 +1,7 @@
+li:first-of-type + li {
+  font-style: italic;
+  color: orange;
+}
+
+/* li:first-of-type: Selecciona el primer elemento <li> dentro de su contenedor <ul>.
++ li: Aplica los estilos al siguiente hermano inmediato del primer <li>. */

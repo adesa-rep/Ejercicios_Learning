@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  /* Este valor activa el modelo de diseño flexbox, lo que hace que los elementos hijos (en este caso, las cajas) se alineen automáticamente en una fila. Es decir, todos los elementos hijos se verán en fila */
+  /* *[ caja 1 | caja 2 | caja 3 | caja 4 ] */
+}
+
+.box {
+  width: 25vw; /* Cada caja ocupa el 25% del ancho del viewport */
+  height: 50vh; /* 50% del alto del viewport */
+}
+
+/* :nth-child() es un selector en CSS que selecciona un elemento según su posición en el árbol DOM. */
+.box:nth-child(1) {
+  background-color: coral;
+}
+
+.box:nth-child(2) {
+  background-color: lightblue;
+}
+
+.box:nth-child(3) {
+  background-color: lightgreen;
+}
+
+.box:nth-child(4) {
+  background-color: lightpink;
+}
+
+/* [ coral    | lightblue | lightgreen | lightpink ] */

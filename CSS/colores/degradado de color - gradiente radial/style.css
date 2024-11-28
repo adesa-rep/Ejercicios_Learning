@@ -1,0 +1,7 @@
+div {
+  background-image: radial-gradient(
+    circle,
+    red,
+    yellow
+  ); /* Degradado radial de rojo a amarillo */
+}

@@ -1,0 +1,12 @@
+a:any-link {
+  color: crimson;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: greenyellow;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+}
