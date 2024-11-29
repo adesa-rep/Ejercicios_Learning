@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'menu content'
+          'footer footer';
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        padding: 10px;
+      "
+    >
+      <div style="background: red; grid-area: header">Header</div>
+      <div style="background: blue; grid-area: menu">Menu</div>
+      <div style="background: green; grid-area: content">Content</div>
+      <div style="background: yellow; grid-area: footer">Footer</div>
+    </div>
+  </body>
+</html>
