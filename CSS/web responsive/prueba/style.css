@@ -1,0 +1,105 @@
+:root {
+  --font-sm: 24px;
+  --space-md: 20px;
+  --space-sm: 10px;
+}
+
+* {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* para poder calcular ancho y alto del resto de elementos con proporciones, es necesario que estén definidas las dimensiones "base": */
+html,
+body {
+  width: 100%;
+  height: 100%; /* Asegura que la altura se calcule correctamente */
+}
+
+body {
+  width: 100%;
+  border: 2px solid black;
+  padding: var(--space-sm);
+}
+
+#header {
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.661);
+  border: 2px solid black;
+  margin: var(--space-sm) auto;
+}
+
+#page {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  border: 2px solid black;
+  padding: 2%;
+  gap: var(--space-md);
+}
+
+#menu {
+  width: 30%;
+  height: 100%;
+  background-color: green;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* también puede centrarse usando:
+  display: grid;
+  place-items: center; Centra horizontal y verticalmente  */
+}
+
+/*  no es necesario porque ya se esta usando flexbox en #menu
+#menu > p {
+  position: absolute;
+} */
+
+#content {
+  width: 70%;
+  height: 100%;
+  background-color: cornflowerblue;
+  border: 2px solid black;
+  position: relative;
+}
+
+#content > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#footer {
+  width: 100%;
+  background-color: orange;
+  border: 2px solid black;
+  margin: var(--space-sm) auto;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 20px;
+  }
+  #page {
+    flex-direction: column; /* Cambia la dirección a columna */
+    height: auto;
+  }
+
+  #menu,
+  #content {
+    width: 100%; /* Ambos ocupan el 100% del ancho */
+    height: auto; /* Ajustan su altura automáticamente */
+  }
+
+  #content > p {
+    position: static; /* Quita el centrado absoluto en pantallas pequeñas */
+    transform: none;
+    text-align: center; /* Ajusta el texto al centro horizontalmente */
+  }
+}
