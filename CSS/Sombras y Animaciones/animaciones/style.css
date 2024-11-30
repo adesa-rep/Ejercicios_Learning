@@ -1,0 +1,50 @@
+/*! Cambio de color: Podemos crear una animación para cambiar el color de fondo de un elemento de rojo a azul en 2 segundos de la siguiente manera: */
+
+/* primero creamos el keyframe */
+@keyframes cambiarColor {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+/* aplicamos el keyframe a un elemento */
+.mi-elemento {
+  animation: cambiarColor 2s;
+}
+
+/* control de animación */
+.sub-propiedades {
+  animation: cambiarColor 2s infinite;
+  animation-delay: 1s;
+}
+
+/*! rotacion */
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotacion {
+  animation: rotar 2s;
+}
+
+/*! desplazamiento */
+@keyframes desplazar {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 200px;
+  }
+}
+
+.desplazamiento {
+  animation: desplazar 2s;
+}
