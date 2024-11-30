@@ -3,6 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* fuentes descargadas */
 @font-face {
   font-family: 'roboto-descargada';
   src: url(./Assets/Fonts/Roboto-Black.ttf) format('truetype');
@@ -12,14 +14,8 @@
   src: url(./Assets/Fonts/Barriecito/Barriecito-Regular.ttf) format('truetype');
 }
 
-/* @font-face {
-  font-family: 'pacifico';
-  src: url(./Assets/Fonts/Pacifico/Pacifico-Regular.ttf) format('truetype');
-} */
-
+/* fuente importada (las importaciones por css suelen tener mejor rendimiento y algunas problema, es mejor agregar el link en el html */
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
 
 html {
   background-color: blue;
