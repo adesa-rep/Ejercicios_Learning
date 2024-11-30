@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  outline: 2px solid red;
 }
 
 h2 {
@@ -22,6 +23,7 @@ main {
   cursor: crosshair;
 }
 
+/* usamos el flex-direction: column para que el article quede debajo del h2 y no en la misma linea */
 div {
   display: flex;
   flex-direction: column;
