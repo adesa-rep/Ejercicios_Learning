@@ -1,0 +1,69 @@
+:root {
+  --space-max: 20px;
+  --space-min: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: var(--space-max);
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > img {
+  max-width: 15%;
+  max-height: 15%;
+  min-width: 100px;
+  min-height: 100px;
+  aspect-ratio: 1;
+  flex-grow: 1;
+}
+
+/* NOTA: usamos flex-grow para que los elementos se expanda ocupando todo el ancho pero los elemento comparten el espacio dinamicamente ubicandose en la misma fila, si usamos width:100%, ocuparían todo el ancho pero se apilarian uno sobre el otro. Entonces usamos flex-grow: 1; para que todos los elementos que compartan esta propiedad, crezcan de forma proporcional */
+
+header > nav {
+  background-color: plum;
+  flex-grow: 1;
+  /* para "flexibilizar" los elementos (o su alineación) dentro del nav */
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  /* background-color: red; */
+  display: flex; /*para que los li se alineen en fila*/
+  width: 100%; /* si el nav no ocupa todo el ancho, no podrían separarse los elementos*/
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.menu {
+  display: none; /*ocultamos el icono de menu ya que solo sera visible en moviles*/
+  width: 30px;
+  height: 30%;
+}
+
+@media (max-width: 500px) {
+  header > nav {
+    display: none; /*ocultamos el menu horizontal para que solo se vea el icono*/
+  }
+  header > img {
+    width: 30px;
+    height: 30px;
+  }
+  .menu {
+    display: block; /*mostramos el icono de menu*/
+  }
+}
