@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+/* repartimos el espacio de la pantalla de modo que el container ocupe la mayor parte de pagina */
+.container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  height: 10vh;
+  background-color: crimson;
+}
+
+main {
+  flex: 2; /*para que el main ocupe el doble que los demas elementos*/
+  background-color: green;
+}
+
+nav,
+aside {
+  flex: 1; /*estos elementos creceran porporcionalmente en el espacio disponible*/
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  main,
+  nav,
+  aside {
+    flex: auto; /* El elemento puede crecer y encogerse según el espacio disponible*/
+  }
+}
