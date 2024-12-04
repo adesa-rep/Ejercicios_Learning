@@ -9,14 +9,24 @@
   box-sizing: border-box;
 }
 
+/* body,
+html {
+  width: 100%;
+  max-width: 100vw;
+  min-width: 250px;
+} */
+
 header {
+  width: 100vw;
+  /* min-width: 250px; */
   display: flex;
   padding: var(--space-max);
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-max);
 }
-
-header > img {
+/* no podemos usar el selector de hijo directo para atacar el logo con header > img, porque atacaria a todos los elementos img que esten dentro de header */
+header .logo-nerv {
   max-width: 15%;
   max-height: 15%;
   min-width: 100px;
