@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+/* si quisiera organizar las diferentes cartas unas respecto de otras, tendriamos que el display:fit iría en el body (o en el elemento que contenga las cartas) */
+.card {
+  width: 250px;
+  margin: 200px auto;
+  padding: 10px 0px;
+  border-radius: 10px;
+  gap: 20px;
+  box-shadow: 0px 6px 23px -15px rgba(0, 0, 0, 0.75);
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card > h4 {
+  font-size: 20px;
+}
+
+.card > div {
+  grid-template-columns: 1fr 1fr;
+}
+
+.description {
+  text-align: justify;
+  margin: 0px 20px;
+}
+
+.card button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(145, 255, 217, 0.548);
+}
