@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  height: 100svh;
+  margin: 0;
+  grid-template-areas:
+    'header header header' /*todo: header ocupa toda la primera fila (las tres columnas) */
+    'aside main main' /*todo: de la 2da fila, aside ocupa la 1era col y main la 2da y 3ra col */
+    'aside main main' /*todo: */
+    'footer footer footer'; /*todo: footer ocupa toda la 4ta fila */
+}
+
+.container > * {
+  border: 3px solid black;
+}
+
+/* elementos hijos o grid items */
+
+header {
+  background-color: rgb(237, 157, 157);
+  grid-area: header;
+}
+
+main {
+  background-color: rgb(213, 245, 205);
+  grid-area: main;
+}
+
+aside {
+  background-color: rgb(213, 199, 249);
+  grid-area: aside;
+}
+
+footer {
+  background-color: rgb(253, 162, 244);
+  grid-area: footer;
+}

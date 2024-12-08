@@ -1,0 +1,56 @@
+/* a través de la propiedad grid-area vamos a darles un nombre a cada una de las etiquetas aplicándole una regla a cada una de las areas: */
+
+.hg__header {
+  grid-area: header;
+  background-color: brown;
+}
+.hg__footer {
+  grid-area: footer;
+  background-color: aquamarine;
+}
+.hg__main {
+  grid-area: main;
+  background-color: blueviolet;
+}
+.hg__left {
+  grid-area: navigation;
+  background-color: tomato;
+}
+.hg__right {
+  grid-area: ads;
+  background-color: steelblue;
+}
+/* Acabamos de marcar cada uno de nuestros bloques con un nombre para poder posicionarlos a través de grid-template-area de una manera completamente visual, utilizando estos mismos para colocarlos como si fuera una cuadrícula de texto: */
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header header' /* en la primera fila, las tres columnas sera ocupada por el header*/
+    'navigation main ads' /* la 2da fila, la 1era col sera ocupada por la barra de navegacion, ;a 2da por el main y la 3era por el aside*/
+    'footer footer footer';
+  grid-template-columns: 150px 1fr 150px; /*ancho de la 1era col sera de 150px, la 2da ocupara todo el espacio disponible entre la 1era y la 3era, ya que la 3era sera de 150px*/
+  grid-template-rows:
+    100px /*alto de la primera fila*/
+    1fr /*alto de la fila del medio (ocupara todo el espacio entre la 1era y la 3era fila*/
+    30px;
+  min-height: 100vh;
+}
+
+/* lo hacemos responsive cambiando el  template para que todo se "apile" en columnas */
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      'header'
+      'navigation'
+      'main'
+      'ads'
+      'footer';
+    grid-template-columns: 100%; /* una unica columna que ocupa el 100% del body*/
+    grid-template-rows: /*5 filas con alturas definidas*/
+      100px
+      50px
+      1fr
+      50px
+      30px;
+  }
+}
